@@ -1,0 +1,13 @@
+# Query: strong
+# ContextLines: 1
+
+4 results - 1 file
+
+index.html:
+  22        <p id="author">
+  23:         Posted by <strong>Laura Jones</strong> on Monday, June 21st 2022
+  24        </p>
+
+  40        <p>
+  41:         HTML stands for <strong>H</strong>yper<b>T</b>ext <b>M</b>arkup
+  42          <strong>L</strong>anguage. It's a markup language that web developers use to
