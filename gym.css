@@ -1,0 +1,42 @@
+.left {
+  position: absolute;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(134, 55, 55);
+  left: 10px;
+  top: 20px;
+}
+.mid {
+  color: rgb(255, 255, 255);
+  /* border: 2px solid white; */
+  display: block;
+  width: 35%;
+  margin: 20px auto;
+}
+.right {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(168, 139, 106);
+}
+.navbar{
+  display: inline-block;
+}
+.navbar li{
+  display: inline-block;
+  font-size: 17px;
+  
+}
+.navbar li a {
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+  padding: 20px;
+}
+.navbar li a:hover , .navbar li a:active{
+  color: rgb(231, 217, 88);
+  text-decoration: none;
+  padding: 20px; 
+  text-decoration: underline;
+}
