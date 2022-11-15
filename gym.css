@@ -1,16 +1,22 @@
+body {
+  font-family: "Vollkorn", serif;
+  margin: 0px;
+  padding: 0px;
+  background: url("img/bg.jpg");
+}
 .left {
   position: absolute;
   display: inline-block;
   color: rgb(255, 255, 255);
-  border: 2px solid rgb(134, 55, 55);
-  left: 10px;
-  top: 20px;
+  /* border: 2px solid rgb(134, 55, 55); */
+  left: 60px;
+  top: 0px;
 }
 .mid {
   color: rgb(255, 255, 255);
   /* border: 2px solid white; */
   display: block;
-  width: 35%;
+  width: 20%;
   margin: 20px auto;
 }
 .right {
@@ -19,24 +25,74 @@
   top: 20px;
   display: inline-block;
   color: rgb(255, 255, 255);
-  border: 2px solid rgb(168, 139, 106);
+  /* border: 2px solid rgb(168, 139, 106); */
 }
-.navbar{
+.navbar {
   display: inline-block;
 }
-.navbar li{
+.navbar li {
   display: inline-block;
   font-size: 17px;
-  
 }
 .navbar li a {
   color: rgb(201, 201, 201);
   text-decoration: none;
   padding: 20px;
 }
-.navbar li a:hover , .navbar li a:active{
-  color: rgb(231, 217, 88);
+.navbar li a:hover,
+.navbar li a:active {
+  color: rgb(96 96 93);
   text-decoration: none;
-  padding: 20px; 
+  padding: 20px;
   text-decoration: underline;
+}
+.left img {
+  width: 200px;
+}
+
+.left div {
+  text-align: center;
+  line-height: 0px;
+  font-size: 50px;
+}
+.btn {
+  padding: 4px 16px;
+  margin: 0px 9px;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Vollkorn", serif;
+}
+.btn:hover {
+  background-color: rgb(141, 141, 141);
+}
+.container {
+  color: rgb(201 201 201);
+  border: 2px solid white;
+  margin: 581px 615px;
+  padding: 75px;
+  width: 33%;
+  border-radius: 20px;
+}
+.container h1{
+  text-align: center;
+}
+.container button{
+    width: 23%;
+    margin: auto;
+    display: block;
+}
+.form-group input {
+  text-align: center;
+  display: block;
+  width: 570px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 10px auto;
+  font-size: 16px;
+   font-family: "Vollkorn", serif;
 }
