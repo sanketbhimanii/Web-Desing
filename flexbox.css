@@ -13,7 +13,7 @@ body{
   
   flex-wrap: wrap;
 } 
-.flex-iteam{
+.flex-iteam{ 
   width: 75px;
   height: 75px;
   border: 2px solid rgb(51, 51, 26);
@@ -21,7 +21,7 @@ body{
   font-size: 2em;
   color: white;
   font-weight: bold;
-  line-height: 1.4;
+  line-height: 1.4;  
 }
 #flex-iteam-1{
   background-color: lightpink;
