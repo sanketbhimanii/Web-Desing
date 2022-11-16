@@ -1,0 +1,22 @@
+ body{
+      margin: 0 auto;
+      max-width: 900px;
+      width: 90%;
+    }
+#box{
+  float: left;
+  margin: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: lightblue;
+  padding: 1em;
+}
+.resume{
+  background-color: lightskyblue;
+  padding: 15px;
+  color: aliceblue;
+}
+.cleared{
+  clear: left;
+}
