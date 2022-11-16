@@ -7,7 +7,7 @@ body {
   border-top: 5px solid #1098ad;
   font-family: sans-serif;
   color: #444;
-   position: relative;
+  position: relative;
 }
 
 h1,
@@ -76,7 +76,6 @@ li {
 
 article {
   margin-bottom: 60px;
- 
 }
 
 #author {
@@ -97,12 +96,12 @@ article {
 .related {
   list-style: none;
 }
-.container{
+.container {
   width: 110em;
   /* margin-left: auto;
   margin-right: auto; */
-  margin:0 auto;
-   position: relative;
+  margin: 0 auto;
+  position: relative;
 }
 
 .main-header {
@@ -166,17 +165,27 @@ a {
 #copyright {
   font-size: 17px;
 }
-.post-img{
+.post-img {
   height: auto;
   width: 50%;
 }
-button{
+button {
   font-size: 20px;
   padding: 20px;
   cursor: pointer;
   position: absolute;
   /* bottom: 0;
   left: 0; */
- bottom: 7em;
-    right: 31em;
+  bottom: 7em;
+  right: 31em;
+}
+
+.author-img {
+  float: left;
+
+}
+.author {
+  padding-left: 60px;
+  padding-top: 15px;
+  margin-left: 20px;
 }
