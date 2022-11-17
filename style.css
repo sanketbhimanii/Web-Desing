@@ -30,6 +30,7 @@ h1 {
   text-transform: uppercase;
   font-style: italic;
   margin-left: 5px;
+  float: left;
 }
 
 h2 {
@@ -112,8 +113,13 @@ article {
   height: 100px;
 }
 
+nav {
+  font-size: 25px;
+  float: right;
+}
+
 .post-header {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 aside {
@@ -157,13 +163,14 @@ a:active {
   color: #7c7cf1;
 }
 a {
-  padding: 34px;
-  margin-left: 14px;
-  font-size: 27px;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 #copyright {
   font-size: 17px;
+  font-style:oblique ;
 }
 .post-img {
   height: auto;
@@ -182,10 +189,8 @@ button {
 
 .author-img {
   float: left;
-
 }
 .author {
   padding-left: 60px;
   padding-top: 15px;
-  margin-left: 20px;
 }
