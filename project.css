@@ -99,7 +99,6 @@ li {
   list-style: none;
 }
 .container {
-  
   /* margin-left: auto;
   margin-right: auto; */
   width: 1200px;
@@ -126,18 +125,18 @@ nav {
 aside {
   background-color: #f3f3f3;
   border: 5px solid #1098ad;
- 
+
   margin-top: 20px;
   margin-right: 250px;
   margin-left: 250px;
   margin-bottom: 50px;
   width: 700px;
-
 }
 
 aside p {
   color: #595f60;
 }
+
 /* body{
   background-color: lightsteelblue;
 } */
@@ -185,8 +184,8 @@ button {
   position: absolute;
   /* bottom: 0;
   left: 0; */
-  bottom: 7em;
-  right: 31em;
+  bottom: 6em;
+  left: 54em;
 }
 
 .author-img {
@@ -196,6 +195,3 @@ button {
   padding-left: 60px;
   padding-top: 15px;
 }
-
-
-
