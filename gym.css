@@ -2,7 +2,8 @@ body {
   font-family: "Vollkorn", serif;
   margin: 0px;
   padding: 0px;
-  background: url("img/bg.jpg");
+  background-image:url("img/bg.jpg");
+
 }
 .left {
   position: absolute;

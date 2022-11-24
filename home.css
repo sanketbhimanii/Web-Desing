@@ -51,7 +51,7 @@
 .middle{
  
    width: 85%;
-   height: 20%;
+   height: 20cl%;
   margin: auto;
   padding: 35px 20px;
   display: flex;
@@ -62,10 +62,10 @@
   font-weight: bold;
   font-size: 25px;
   border-radius: 20px;
-
+}
 
   
-}
+
 .containt {
   position: absolute;
   width: 100%;
