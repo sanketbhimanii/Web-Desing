@@ -1,0 +1,118 @@
+/* global css start  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Alexandria", sans-serif;
+}
+
+.container {
+  width: 1440px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* global css end */
+
+/* HEADER START */
+
+header .container {
+  display: flex;
+}
+
+.logo {
+  width: 20%;
+}
+
+.page-logo {
+  height: 150px;
+  width: 210px;
+  padding-right: 198px;
+}
+
+.page-menu {
+  width: 50%;
+  padding-left: 12px;
+  padding-right: 98px;
+  padding-top: 18px;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 11px;
+  padding-top: 52px;
+  color: #a3a3a3;
+  font-size: 18px;
+}
+
+.page-icon {
+  width: 20%;
+  padding-top: 42px;
+  display: flex;
+}
+
+.user-icon,
+.search-icon,
+.shopping-cart-icon {
+  padding: 20px;
+  height: 25px;
+  width: 25px;
+  color: #a3a3a3;
+}
+/* HEADER END */
+
+/* hero-section start */
+.hero-img {
+ height: 165px;
+
+}
+
+.container-fluid {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/honey.jpg");
+  height: 1300px;
+}
+
+.hero-card {
+  position: relative;
+  /* width: 580px; */
+  width: 49em;
+  height: 27em;
+  background-color: #2b201e52;
+  padding: 31px;
+  backdrop-filter: blur(7px);
+}
+
+.hero-Title {
+  font-size: 62px;
+  color: whitesmoke;
+}
+
+.hero-sub-title {
+  font-size: 32px;
+  font-weight: 100;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: whitesmoke;
+}
+
+.hero-button {
+  height: 80px;
+  width: 255px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 4px;
+  background-color: #ffc107;
+  font-weight: 600;
+}
+.hero-section .container {
+  padding-top: 400px;
+  padding-left: 100px;
+}
+
+/* hero-section end */
