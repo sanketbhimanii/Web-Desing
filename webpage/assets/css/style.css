@@ -187,5 +187,76 @@ img.hero-img {
   text-align: end;
   padding: 10px;
 }
-
 /* section 3 end */
+
+/* section_4 start */
+
+.container h3 {
+  font-size: 28px;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.product-list {
+  display: flex;
+}
+
+.product {
+  max-width: 30%;
+  padding: 0px 20px;
+  
+}
+
+
+.product-detail {
+  max-width: 100%;
+  border: 2px solid hsl(55deg 13% 81%);
+  padding: 0px 20px;
+}
+
+.product-detail .product-title{
+  color: hsl(43deg 88% 54%);
+  text-align: center ;
+  padding-top:30px;
+  text-transform: uppercase;
+}
+
+.product-detail .product-price {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  padding:15px;
+}
+
+.product-button{
+  display: flex;
+  justify-content: center;
+}
+
+.product-button button{
+  background-color: #ffc107;
+  padding: 12px 75px;
+  border: none;
+  color: hsl(42deg 90% 89%);
+  
+}
+
+.product .product-img {
+  /* width: 352px; */
+  max-width: 100%;
+  max-height: auto;
+} 
+
+.product .product-ratting{
+  display: flex;
+  justify-content: center;
+}
+
+.product .product-ratting .ratting-img{
+width: auto;
+height: 20px;
+margin: auto;
+padding: 20px 0px;
+}
+/* section_4 end */
