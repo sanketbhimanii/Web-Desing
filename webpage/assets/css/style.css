@@ -157,7 +157,7 @@ img.hero-img {
   top: 0;
 }
 
-.container-honeycubes {
+.honeycubes {
   position: relative;
   max-width: 50%;
   float: left;
@@ -170,55 +170,77 @@ img.hero-img {
   width: 100%;
 }
 
-.details-title {
+.details {
   color: white;
   position: relative;
 }
 
-.details-title h3 {
+.details h3 {
   text-align: right;
   font-size: 52px;
   font-weight: 600;
   padding-bottom: 34px;
 }
 
-.details-title p {
-  font-size: 28px;
+.details p {
+  font-size: 24px;
   text-align: end;
-  padding: 10px;
+  line-height: 40px;
 }
 /* section 3 end */
 
 /* section_4 start */
 
 .container h3 {
-  font-size: 28px;
+  font-size: 52px;
   text-align: center;
-  padding: 50px 0px;
+  padding-top: 50px;
 }
 
 .product-list {
   display: flex;
+  padding: 60px 0px;
 }
 
 .product {
   max-width: 30%;
   padding: 0px 20px;
-  
+  position: relative;
 }
-
 
 .product-detail {
   max-width: 100%;
   border: 2px solid hsl(55deg 13% 81%);
   padding: 0px 20px;
+  margin-top: -4px;
 }
 
-.product-detail .product-title{
+.product-detail .product-title {
   color: hsl(43deg 88% 54%);
-  text-align: center ;
-  padding-top:30px;
+  text-align: center;
+  padding-top: 30px;
   text-transform: uppercase;
+}
+.product-detail .offer-price {
+  display: flex;
+  justify-content: center;
+}
+.product-detail .product-price-1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  padding: 15px;
+  color: hsl(43deg 88% 54%);
+}
+
+.product-detail .product-price-2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  padding: 15px;
+  text-decoration: line-through;
 }
 
 .product-detail .product-price {
@@ -226,37 +248,136 @@ img.hero-img {
   text-transform: uppercase;
   font-weight: 100;
   text-align: center;
-  padding:15px;
+  padding: 15px;
 }
 
-.product-button{
+.product-button {
   display: flex;
   justify-content: center;
 }
 
-.product-button button{
+.product-button button {
   background-color: #ffc107;
   padding: 12px 75px;
   border: none;
   color: hsl(42deg 90% 89%);
-  
+  border-radius: 5px;
 }
 
 .product .product-img {
   /* width: 352px; */
   max-width: 100%;
   max-height: auto;
-} 
+}
 
-.product .product-ratting{
+.product .product-ratting {
   display: flex;
   justify-content: center;
 }
 
-.product .product-ratting .ratting-img{
-width: auto;
-height: 20px;
-margin: auto;
-padding: 20px 0px;
+.product .product-ratting .ratting-img {
+  width: auto;
+  height: 20px;
+  margin: auto;
+  padding: 20px 0px;
+}
+.checkout-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.checkout-button button {
+  border: 2px solid black;
+  padding: 20px 114px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.bestsaller {
+  position: absolute;
+  font-size: 18px;
+  background-color: orange;
+  padding: 10px 30px;
+  right: 30px;
+  top: 12px;
+  border-radius: 3px;
 }
 /* section_4 end */
+
+/* section 5 start */
+.section_5 .container-fluid {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/section5main.jpg);
+  position: relative;
+  padding: 100px 0;
+}
+.section_5 .container-fluid::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: hsl(52deg 19% 32% / 63%);
+  top: 0;
+}
+
+.container h2 {
+  position: relative;
+  font-size: 64px;
+  text-align: center;
+  color: white;
+}
+
+.about-honeyfarming {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+}
+
+.section_5 .honeyfarming-steps {
+  position: relative;
+  width: 30%;
+  padding: 24px 24px;
+}
+
+.honeyfarming-steps .honeyfarming-img {
+  height: 300px;
+}
+
+.honeyfarming-steps h3 {
+  text-align: start;
+  font-size: 28px;
+  color: aliceblue;
+  padding: 10px 10px;
+  font-weight: 600;
+}
+
+.honeyfarming-steps P {
+  font-size: 18px;
+  color: aliceblue;
+  padding: 10px 10px;
+  font-weight: 300;
+}
+/* section 5 end */
+
+/* section_6 start */
+.section_6 .container-fluid {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(53deg 23% 92%);
+  padding: 100px 0;
+}
+.section_6 .review {
+  display: flex;
+  width: 40%;
+  background: white;
+  width: 40%;
+  padding: 20px 50px;
+}
+/* section_6 end */
