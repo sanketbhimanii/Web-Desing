@@ -145,7 +145,7 @@ img.hero-img {
 
 /* Section 3 start */
 
-.section_3 .container-fluid {
+.section-3 .container-fluid {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,7 +154,7 @@ img.hero-img {
   padding: 300px 0;
 }
 
-.section_3 .container-fluid::before {
+.section-3 .container-fluid::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -197,7 +197,7 @@ img.hero-img {
 
 /* section_4 start */
 
-.section_4 .container h3 {
+.section-4 .container h3 {
   font-size: 52px;
   text-align: center;
   padding: 40px 0px;
@@ -313,7 +313,7 @@ img.hero-img {
 /* section_4 end */
 
 /* section 5 start */
-.section_5 .container-fluid {
+.section-5 .container-fluid {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -321,7 +321,7 @@ img.hero-img {
   position: relative;
   padding: 100px 0;
 }
-.section_5 .container-fluid::before {
+.section-5 .container-fluid::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -345,7 +345,7 @@ img.hero-img {
   padding: 25px;
 }
 
-.section_5 .honeyfarming-steps {
+.section-5 .honeyfarming-steps {
   position: relative;
   width: 30%;
   padding: 24px 24px;
@@ -372,7 +372,7 @@ img.hero-img {
 /* section 5 end */
 
 /* section_6 start */
-.section_6 .container-fluid {
+.section-6 .container-fluid {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,7 +380,7 @@ img.hero-img {
   padding: 100px 0;
 }
 
-.section_6 p {
+.section-6 p {
   font-size: 44px;
   text-align: center;
   font-weight: 600;
@@ -393,7 +393,7 @@ img.hero-img {
   padding: 20px 0px;
 }
 
-.section_6 .review-box {
+.section-6 .review-box {
   display: flex;
   background: white;
   padding: 30px 0px;
@@ -449,7 +449,7 @@ img.hero-img {
 /* section_6 end */
 
 /* section_7 start */
-.section_7 {
+.section-7 {
   padding: 100px 0px;
 }
 
@@ -476,15 +476,15 @@ img.hero-img {
 /* section_7 end */
 
 /* section-8 start */
-.section_8 .container-fluid {
+.section-8 .container-fluid {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/honey.jpg");
   position: relative;
-  padding: 300px 0;
+  padding: 50px 0px;
 }
-.section_8 .container-fluid::before {
+.section-8 .container-fluid::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -492,13 +492,13 @@ img.hero-img {
   background-color: #2a4d3fb8;
   top: 0;
 }
-.section_8 .container h4 {
+.section-8 .container h4 {
   position: relative;
   font-size: 34px;
   text-align: center;
   color: white;
 }
-.section_8 .container h5 {
+.section-8 .container h5 {
   position: relative;
   font-size: 24px;
   font-weight: 400;
@@ -506,16 +506,146 @@ img.hero-img {
   text-align: center;
   color: white;
 }
-.section_8 .container h5::after{
-  
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 40px;
-    background-color: white;
-    top: 50px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+.section-8 .container h5::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 40px;
+  background-color: white;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
+.section-8 .blog-section-area {
+  display: flex;
+  padding: 25px 0px;
+}
+.section-8 .blog-section {
+  max-width: 30%;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.blog-section .blog-section-img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.blog-section .blog-discription {
+  background-color: white;
+  padding: 10px 15px;
+  margin: -10px 0px;
+}
+
+.blog-discription h2 {
+  color: hsl(7deg 72% 44%);
+  font-size: 18px;
+  text-align: left;
+  padding: 15px 0px;
+}
+.blog-discription .blog-title-video {
+  color: orange;
+  font-size: 18px;
+  text-align: left;
+  padding: 15px 0px;
+}
+
+.blog-discription .blog-title-casestudy {
+  color: #366351;
+  font-size: 18px;
+  text-align: left;
+  padding: 15px 0px;
+}
+
+.blog-discription .blog-paragrapgh-main {
+  padding: 15px 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.blog-discription .blog-paragrapgh {
+  padding: 15px 0px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.blogers-profile {
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blogers-profile .blogers-profile-pic {
+  border-radius: 100px;
+  width: 20%;
+}
+
+.blogers-profile h3 {
+  font-size: 18px;
+  padding: 0px 0px 5px 0px;
+}
+
+.section-8 .blogers-profile h4 {
+  font-size: 14px;
+  color: rgb(138, 134, 134);
+  font-weight: 100;
+}
+
+.blogers-profile .about-blogers {
+  margin: 15px;
+}
+
 /* section-8 end */
+
+/* footer start */
+.footer {
+  background-color: #f0efe7;
+  padding: 50px 15px;
+}
+
+.footer .container {
+  display: flex;
+  color: #6e6e6c;
+  text-align: left;
+  padding: 50px 0px;
+}
+
+.container .col-01 {
+  padding: 0px 20px;
+  width: 25%;
+}
+.col-01 h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  letter-spacing: 2px;
+}
+.col-01 p {
+  padding: 10px 0px;
+  line-height: 25px;
+}
+
+.col-01 h4 {
+  font-size: 16px;
+  padding: 10px 0px;
+  font-weight: 300;
+}
+
+.col-01 .footer-logo {
+  width: 10%;
+  padding: 10px;
+}
+
+.footer .payment-options {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-options .payment-card-logo {
+  padding: 10px 10px;
+}
+
+/* footer end */
