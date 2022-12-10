@@ -1,25 +1,20 @@
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: white;
   font-family: sans-serif;
- 
 }
 
-
 /* header-start */
+
 .header-section {
-  position: absolute;
   width: 1760px;
   height: 308px;
-  left: 80px;
-  top: 60px;
   background: url(../img/Rectangle\ 7.jpg);
   border-radius: 32px;
- 
 }
 
 .header-section .about-header,
@@ -106,11 +101,8 @@ body {
   align-items: flex-start;
   padding: 0px;
   gap: 50px;
-  position: absolute;
   width: 1696px;
   height: 633px;
-  left: 112px;
-  top: 401px;
 }
 
 .container .sub-container {
@@ -174,7 +166,7 @@ body {
   height: 32px;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 22px;
   line-height: 32px;
   text-transform: uppercase;
   color: #010101;
@@ -342,7 +334,7 @@ body {
   }
 } */
 
-@media only screen and (max-width: 1900px) and (max-height: 720px) {
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
   .about-header .name {
     font-size: 30px;
   }
@@ -365,27 +357,83 @@ body {
     font-size: 30px;
   }
   .header-section {
-    width: 70%;
+    margin: 30px auto;
+    width: 1720px;
   }
   .container {
-    width: 70%;
+    margin: 30px auto;
+    width: 1720px;
+  }
+  .container .sub-container {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+  .sub-container h2 {
+    font-size: 28px;
+    display: block;
+  }
+  .sub-container .col-01 {
+    display: flex;
+    width: 100%;
+  }
+  .col-01 h3 {
+    font-size: 32px;
+    font-weight: 200;
+  }
+  .col-01 p {
+    font-weight: 200;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .about-header .name {
+    font-size: 30px;
+  }
+  .about-header .type {
+    font-size: 22px;
+  }
+  .about-header .derectorey {
+    font-size: 70px;
+  }
+
+  .header-more-detail .time {
+    font-size: 30px;
+  }
+
+  .header-more-detail .date {
+    font-size: 30px;
+  }
+
+  .header-more-detail .temprature {
+    font-size: 30px;
+  }
+  .header-section {
+    width: 1250px;
+    margin: 30px auto;
+    
+  }
+  .container {
+    width: 1250px;
+    margin: 40px auto;
    
   }
   .container .sub-container {
     display: flex;
-    width: 80%;
+    width: 30%;
     gap: 20px;
   }
   .sub-container h2 {
     font-size: 28px;
-    display: block;
+    display: contents;
   }
   .sub-container .col-01 {
-    display: block;
-    width: 80%;
+    display: flex;
+    width: 100%;
   }
   .col-01 h3 {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 200;
   }
   .col-01 p {
@@ -394,181 +442,60 @@ body {
   }
 }
 
-@media only screen and (max-width: 1100px) and (max-height: 750px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .about-header .name {
-    font-size: 28px;
+    font-size: 30px;
   }
   .about-header .type {
-    font-size: 20px;
+    font-size: 22px;
   }
   .about-header .derectorey {
-    font-size: 40px;
+    font-size: 70px;
   }
 
   .header-more-detail .time {
-    font-size: 28px;
-  }
-
-  .header-more-detail .date {
-    font-size: 22px;
-  }
-
-  .header-more-detail .temprature {
-    font-size: 28px;
-  }
-  .header-section {
-    width: 80%;
-  }
-  .container {
-    width: 80%;
-    gap: 30px;
-  }
-  .container .sub-container {
-    display: flex;
-    width: 30%;
-    gap: 15px;
-  }
-  .sub-container h2 {
-    font-size: 26px;
-    display: block;
-  }
-  .sub-container .col-01 {
-    display: block;
-    width: 80%;
-  }
-  .col-01 h3 {
-    font-size: 18px;
-    font-weight: 200;
-  }
-  .col-01 p {
-    font-weight: 200;
-    font-size: 12px;
-    line-height: 10px;
-  }
-}
-
-@media only screen and (max-width: 600px) and (max-height: 750px) {
-  
-  .about-header .name {
-    font-size: 20px;
-  }
-  .about-header .type {
-    font-size: 10px;
-  }
-  .about-header .derectorey {
     font-size: 30px;
   }
 
-  .header-more-detail .time {
-    font-size: 20px;
-  }
-
   .header-more-detail .date {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .header-more-detail .temprature {
-    font-size: 20px;
+    font-size: 30px;
   }
   .header-section {
-    width: 70%;
+    width: 768px;
+    margin: 40px auto;
   }
   .container {
-    width: 70%;
-    gap: 20px;
+    width: 650px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
   }
-    .container .sub-container {
+  .container .sub-container {
     display: flex;
-    width: 80%;
-    gap: 15px;
+    width: 90%;
+    gap: 20px;
   }
   .sub-container h2 {
-    font-size: 26px;
-    display: block;
-    height: auto;
+    font-size: 28px;
+    display: contents;
   }
   .sub-container .col-01 {
-    display: block;
-    width: 80%;
+    display: flex;
+    width: 100%;
   }
   .col-01 h3 {
-    font-size: 18px;
+    font-size: 32px;
     font-weight: 200;
   }
   .col-01 p {
     font-weight: 200;
-    font-size: 12px;
-    line-height: 10px;
+    font-size: 22px;
   }
 }
 
-@media only screen and (max-width: 550px) and (max-height: 750px) {
-  .header-more-detail {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .about-header .name {
-    font-size: 15px;
-    top: 100px;
-  }
-  .about-header .type {
-    font-size: 10px;
-    top: 115px;
-  }
-  .about-header .derectorey {
-    font-size: 25px;
-    top: 140px;
-  }
-
-  .header-more-detail .time {
-    font-size: 15px;
-    top: 180px;
-  }
-
-  .header-more-detail .date {
-    font-size: 15px;
-    top: 200px;
-  }
-
-  .header-more-detail .temprature {
-    font-size: 15px;
-    top: 225px;
-  }
-
-  .header-section {
-    width: 70%;
-  }
-
-  .container {
-    width: 75%;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-    .container .sub-container {
-    display: flex;
-    width: 80%;
-    gap: 15px;
-  }
-  .sub-container h2 {
-    font-size: 26px;
-    display: block;
-    height: auto;
-  }
-  .sub-container .col-01 {
-    display: block;
-    width: 80%;
-  }
-  .col-01 h3 {
-    font-size: 18px;
-    font-weight: 200;
-  }
-  .col-01 p {
-    font-weight: 200;
-    font-size: 12px;
-    line-height: 10px;
-  }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 }
