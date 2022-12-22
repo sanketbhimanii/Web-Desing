@@ -1,3 +1,6 @@
+/* font-style: normal; check every where in project */
+
+
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +14,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/figma-img.png");
+  /* add shortend propery here */
   height: calc(100vh - 120px);
   display: flex;
   overflow: hidden;
@@ -35,29 +39,27 @@ body {
 
 .information .date-and-time {
   font-family: "Roboto";
-  font-style: normal;
+  /* this style need 40 */
+  font-style: normal;  
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
   color: #000000;
+  /* this 47-49 */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
-
-.date-and-time .time {
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.date-and-time .month {
+/* 52-54 and 57-60 same css can we remove or merge */
+.date-and-time .light-font {
   font-weight: 300;
   text-transform: uppercase;
 }
 
 .information h3 {
   font-family: "Roboto";
+  /* this style need 65 */
   font-style: normal;
   font-weight: 700;
   font-size: 43.7229px;
@@ -155,6 +157,7 @@ body {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  /* add color code same like figma */
   color: yellow;
 }
 
@@ -166,6 +169,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   opacity: 0.5;
+  /* 178 needed? */
   flex: none;
 }
 
@@ -180,72 +184,43 @@ body {
 
 /* mainbox end */
 
-@media screen and (max-width: 1920px) and (min-width: 1440px) {}
+@media screen and (max-width: 1920px){
+  .main-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/figma-img.png");
+  }
 
-.information h3 {
-  font-size: 35px;
-  padding: 0px;
-}
-
-.temprature {
-  font-size: 40px;
-}
-
-.main-box {
-  padding: 30px;
-}
-
-.main-box .list {
-  gap: 30px;
-}
-
-.list .list-data {
-  gap: 10px;
-}
-
-.list .list-title {
-  font-size: 45px;
-}
-
-.list-data .list-number {
-  font-size: 40px;
-}
-
-.list-data .list-iteams {
-  font-size: 30px;
-}
-}
-
-@media screen and (max-width: 1439px) and (min-width: 1200px) {
-
-  .information {
-    padding: 30px;
+  .main-section .section-left {
+    width: 21%;
   }
 
   .information h3 {
-    font-size: 30px;
-    padding: 0px;
+    font-size: 27px;
+    /* multiple any value with it will be zero  */
+    padding: 0;
+    line-height: 40px;
   }
 
   .temprature {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .footer {
-    padding: 20px 20px;
+    font-size: 43.4747px;
+    line-height: 52px;
+    padding: 0px;
   }
 
-  .brand-name {
-    font-size: 35px;
+  .footer .brand-name {
+    font-size: 40px;
+    line-height: 52px;
+
   }
 
   .main-box {
-    /* padding: 30px; */
-    padding: 80px 40px;
-  }
-
-  .section-right .title {
-    font-size: 60px;
+    padding: 30px;
+    padding: 74px 81px 45px 88px;
   }
 
   .main-box .list {
@@ -257,19 +232,98 @@ body {
   }
 
   .list .list-title {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .list-data .list-number {
-    font-size: 24px;
+    font-size: 40px;
   }
 
   .list-data .list-iteams {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 768px) {
+@media screen and (max-width: 1440px) and{
+  body {
+    margin: 32px;
+  }
+
+  .main-section {
+    height: calc(100vh - 64px);
+  }
+
+  .information {
+    gap: 16.08px;
+  }
+
+  .information h3 {
+    font-size: 28.9447px;
+    line-height: 34px;
+    padding: 0px;
+  }
+
+  .temprature {
+
+    font-size: 35.1541px;
+    line-height: 41px;
+  }
+
+  .footer {
+    padding: 20px 20px;
+  }
+
+  .footer .brand-name {
+    font-size: 28.9832px;
+    line-height: 35px;
+  }
+
+  .main-box {
+    /* padding: 30px; */
+    padding: 80px 40px;
+  }
+
+  .section-right .title {
+
+    font-size: 53px;
+    line-height: 63px;
+    /* identical to box height */
+
+  }
+/* why add same css with this 231 */
+  .main-box .list {
+    gap: 30px;
+  }
+
+  .list .list-data {
+    gap: 10px;
+  }
+
+  .list .list-title {
+    /* not add point css add even number like 32 34  */
+    font-size: 33.3333px;
+    line-height: 40px;
+  }
+
+  .list-data .list-number {
+    font-size: 26.6667px;
+    line-height: 32px;
+  }
+
+  .list-data .list-iteams {
+    font-size: 26.6667px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 1200px) and  {
+  body {
+    margin: 32px;
+  }
+
+  .main-section {
+    height: calc(100vh - 64px);
+  }
 
 
   .information {
@@ -277,14 +331,16 @@ body {
   }
 
   .information h3 {
-    font-size: 25px;
-    display: flex;
-    gap: 10px;
+    font-size: 28.9447px;
+    line-height: 34px;
     padding: 0px;
+    gap: 16px;
   }
 
   .vector .temprature {
-    font-size: 35px;
+    font-size: 35.1541px;
+    line-height: 41px;
+    padding: 0px;
   }
 
   .footer {
@@ -296,13 +352,14 @@ body {
   }
 
   .footer .brand-name {
-    font-size: 25px;
-    padding: 0px;
+    font-size: 28.9832px;
+    line-height: 35px;
+    padding: 10px;
   }
 
   .main-box {
-    padding: 80px 40px;
-    width: 100%;
+    padding: 58px 40px 59px 56px;
+
   }
 
   .main-box .list-one {
@@ -313,12 +370,13 @@ body {
     width: 50%;
   }
 
-  .main-box .list-three {
+  .main-box .list:nth-child(3) {
     display: none;
   }
 
   .section-right .title {
-    font-size: 60px;
+    font-size: 53.3333px;
+    line-height: 63px;
   }
 
   .main-box .list {
@@ -326,31 +384,43 @@ body {
   }
 
   .list .list-data {
-    gap: 10px;
+    gap: 24px;
   }
 
   .list .list-title {
-    font-size: 30px;
+    font-size: 33.3333px;
+    line-height: 40px;
   }
 
   .list-data .list-number {
-    font-size: 20px;
+    font-size: 33.3333px;
+    line-height: 40px;
   }
 
   .list-data .list-iteams {
-    font-size: 20px;
+    font-size: 26.6667px;
+    line-height: 32px;
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 576px) {
+@media screen and (max-width: 1080px) {
+  body {
+      margin: 32px;
+    }
+  
+    .main-section {
+      height: calc(100vh - 64px);
+    }
 
 
   .information {
-    padding: 10px;
+    padding: 20px;
   }
 
   .information h3 {
     font-size: 17px;
+    line-height: 30px;
+    padding: 0px;
 
   }
 
@@ -373,10 +443,9 @@ body {
 
   .main-box {
 
-    padding: 15px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    padding: 58px 40px 59px 56px;
+    /* width: 100%; */
+
 
   }
 
@@ -385,11 +454,11 @@ body {
   }
 
   .main-box .list-one {
-    width: 100%;
+    width: 50%;
   }
 
   .main-box .list-two {
-    width: 100%;
+    width: 50%;
   }
 
   .main-box .list-three {
@@ -398,25 +467,451 @@ body {
 
   .section-right .title {
     font-size: 50px;
+    padding: 5px 0px;
   }
 
-  /* .main-box .list {
-    gap: 0px;
+  .main-box .list {
+    gap: 10px;
   }
 
   .list .list-data {
-    gap: 0px;
+    gap: 3px;
   }
 
   .list .list-title {
-    font-size: 25px;
+    font-size: 25.3333px;
+    line-height: 40px;
   }
 
   .list-data .list-number {
-    font-size: 15px;
+    font-size: 20.6667px;
+    line-height: 32px;
   }
 
   .list-data .list-iteams {
-    font-size: 15px;
-  } */
+    font-size: 18.6667px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    margin: 24px;
+  }
+
+  .main-section {
+    height: calc(100vh - 48px);
+  }
+
+  .information {
+    padding: 20px;
+  }
+
+  .information h3 {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0px;
+
+  }
+
+  .vector .temprature {
+    font-size: 25px;
+  }
+
+  .footer {
+    padding: 0px;
+  }
+
+  .footer .substract-img {
+    height: 30px;
+  }
+
+  .footer .brand-name {
+    font-size: 20px;
+    padding: 0px;
+  }
+
+  .main-box {
+    width: 100%;
+    padding: 55px 34px 65px 34px;
+  }
+
+  .main-box .list-one {
+    width: 50%;
+  }
+
+  .main-box .list-two {
+    width: 50%;
+  }
+
+  .main-box .list-three {
+    display: none;
+  }
+
+  .section-right .title {
+    font-size: 40px;
+    padding: 10px 0px;
+  }
+
+  .main-box .list {
+    gap: 15px;
+    letter-spacing: 4px;
+
+  }
+
+  .list .list-data {
+    gap: 3px;
+  }
+
+  .list .list-title {
+    font-size: 30.3333px;
+    line-height: 40px;
+  }
+
+  .list-data .list-number {
+    font-size: 20.6667px;
+    line-height: 25px;
+  }
+
+  .list-data .list-iteams {
+    font-size: 17.6667px;
+    line-height: 28px;
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    margin: 20px;
+  }
+
+  .main-section {
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-section .section-left {
+    width: 100%;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .information h3 {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0px;
+
+  }
+
+  .vector .temprature {
+    font-size: 25px;
+  }
+
+  .footer {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+  }
+
+  .footer .substract-img {
+    height: 35px;
+  }
+
+  .footer .brand-name {
+    font-size: 35px;
+    padding: 0px;
+  }
+
+  .section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-box {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .main-box .list:nth-child(2) {
+    display: none;
+  }
+
+  .main-box .list:nth-child(3) {
+    display: none;
+  }
+
+  .main-box .list-one {
+    width: 100%;
+  }
+
+  .section-right .title {
+    font-size: 53px;
+    padding: 10px 0px;
+
+  }
+
+  .main-box .list {
+    gap: 16px;
+    letter-spacing: 4px;
+    padding: 0px 30px;
+  }
+
+  .list .list-data {
+    gap: 20px;
+  }
+
+  .list .list-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .list-data .list-number {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .list-data .list-iteams {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin: 15px;
+  }
+
+  .main-section {
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-section .section-left {
+    width: 100%;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .information h3 {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0px;
+
+  }
+
+  .vector .temprature {
+    font-size: 20px;
+  }
+
+  .footer {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+  }
+
+  .footer .substract-img {
+    height: 35px;
+  }
+
+  .footer .brand-name {
+    font-size: 35px;
+    padding: 0px;
+  }
+
+  .section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-box {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .main-box .list:nth-child(2) {
+    display: none;
+  }
+
+  .main-box .list:nth-child(3) {
+    display: none;
+  }
+
+
+  .main-box .list-one {
+    width: 100%;
+  }
+
+  .section-right .title {
+    font-size: 45px;
+    padding: 0px;
+    color: #ffffff;
+
+  }
+
+  .main-box .list {
+    gap: 20px;
+    letter-spacing: 4px;
+    padding: 0px 30px;
+  }
+
+  .list .list-data {
+    gap: 15px;
+  }
+
+  .list .list-title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .list-data .list-number {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .list-data .list-iteams {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  body {
+    margin: 15px;
+  }
+
+  .main-section {
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-section .section-left {
+    width: 100%;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .information h3 {
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0px;
+
+  }
+
+  .vector .temprature-icone{
+    width: 35px;
+  }
+
+  .vector .temprature {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 0px;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+  }
+
+  .footer .substract-img {
+    height: 25px;
+  }
+
+  .footer .brand-name {
+    font-size: 25px;
+    padding: 0px;
+  }
+
+  .section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-box {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .main-box .list:nth-child(2) {
+    display: none;
+  }
+
+  .main-box .list:nth-child(3) {
+    display: none;
+  }
+
+
+  .main-box .list-one {
+    width: 100%;
+  }
+
+  .section-right .title {
+    font-size: 30px;
+    padding: 0px;
+    color: #ffffff;
+
+  }
+
+  .main-box .list {
+    gap: 10px;
+    letter-spacing: 1px;
+    padding: 0px 25px;
+  }
+
+  .list .list-data {
+    gap: 5px;
+  }
+
+  .list .list-title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .list-data .list-number {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .list-data .list-iteams {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
