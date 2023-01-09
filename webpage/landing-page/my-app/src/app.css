@@ -49,18 +49,19 @@
 /* background */
 .classes-root {
   min-height: 100vh;
-  background-image: url(../iselandLanding-page/assets/island-bg.jpg);
+  background-image: url(../public/assets/island-bg.jpg);
+  opacity: 1;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* header-start */
 
-.header {
+.header{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 100vh;
 
 }
 
@@ -70,14 +71,14 @@
   flex-grow: 1;
 }
 
-.appbarTitle {
+.appbarTitle{
   color: #7f9ac2;
   flex-grow: 1;
   font-family: 'Nunito';
   font-weight: 900;
 }
 
-.colorText {
+.colorText{
   color: #d8dbdf;
 }
 
@@ -86,49 +87,25 @@
   font-size: 3rem !important;
 }
 
-.appbar-wrapper {
+.appbar-wrapper{
   width: 80%;
   margin: 0 auto;
 }
-
 /* header-end */
 
 /* container start */
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+.container{
   align-items: center;
-  text-align: center;
 }
 
-.headerTitle {
+.headerTitle{
   color: #7f9ac2;
-  font-family: 'Nunito';
-  font-size: 5rem;
+  font-family:'Nunito';
+  font-size: 4.5rem;
 }
 
-.containerArrowdown {
-  color: #d8dbdf;
+.containerArrowdown{
+  color:#d8dbdf;
   font-size: 3rem !important;
 }
-
-/* Container End */
-
-/* Place to visit start */
-  /* ImageCard */
- .card-information{
-  background: rgba(0,0, 0, 0.5);
-
- }
- .card{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   padding: 20px;
-   gap: 40px;
-  
- }
-/* Place to visit end */
-
